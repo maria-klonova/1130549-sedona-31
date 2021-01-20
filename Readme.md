@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Клонова](https://up.htmlacademy.ru/htmlcss/30/user/1130549).
-* Наставник: `Неизвестно 1`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
