@@ -61,7 +61,7 @@
                   height="75"
                   alt=""
                 />
-                <h3>Жильё</h3>
+                <h4>Жильё</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li>
@@ -71,7 +71,7 @@
                   height="75"
                   alt=""
                 />
-                <h3>Еда</h3>
+                <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
@@ -81,7 +81,7 @@
                   height="75"
                   alt=""
                 />
-                <h3>Сувениры</h3>
+                <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -136,17 +136,20 @@
               <input type="date" id="check_out" name="check_out" />
             </div>
             <div>
-              <button>-</button>
               <label for="adults">Взрослые:</label>
-              <input type="number" id="adults" name="adults" />
-              <button>+</button>
-
+              <div>
+                <button type="button">-</button>
+                <input type="number" id="adults" name="adults" />
+                <button type="button">+</button>
+              </div>
             </div>
             <div>
-              <button>-</button>
               <label for="children">Дети:</label>
-              <input type="number" id="children" name="children" />
-              <button>+</button>
+              <div>
+                <button type="button">-</button>
+                <input type="number" id="children" name="children" />
+                <button type="button">+</button>
+              </div>
             </div>
             <button type="submit">Найти</button>
           </form>

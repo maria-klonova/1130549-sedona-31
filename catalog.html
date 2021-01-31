@@ -27,7 +27,7 @@
       <h1>Каталог</h1>
       <!--  Фильтр  -->
       <section>
-        <h2>Преимущества</h2>
+        <h2>Фильтр</h2>
         <form action="#">
           <div>
             <span>Инфраструктура:</span>
@@ -59,7 +59,11 @@
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="filter-apartments" />
+                <input
+                  type="checkbox"
+                  name="apartments"
+                  id="filter-apartments"
+                />
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
@@ -69,17 +73,16 @@
             <span>Стоимость в сутки (Р):</span>
             <input type="number" id="price_low" name="price_low" />
             <input type="number" id="price_top" name="price_top" />
-         <div>
-              <button>start dot</button>
-              <button>line</button>
-              <button>end dot</button>
+            <div>
+              <button type="button">start dot</button>
+              <div>line</div>
+              <button type="button">end dot</button>
             </div>
             <button type="submit">Показать</button>
           </div>
         </form>
       </section>
       <div>
-        <h2>Сортировка</h2>
         <span>Найдено: 3</span>
         <div>
           <span>Сортировка:</span>
@@ -110,13 +113,15 @@
           </div>
           <div>
             <div>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
+              <p>Уровень отеля - 5 звезд</p><!-- скрытый элемент -->
+              <img
+              src="https://via.placeholder.com/112x17"
+              width="112"
+              height="17"
+              alt="уровень - 5 звезд"
+            />
             </div>
-            <span>Рейтинг: 8,5</span>
+            <p>Рейтинг: 8,5</span>
           </div>
         </article>
         <article>
@@ -135,13 +140,15 @@
           </div>
           <div>
             <div>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
+              <p>Уровень отеля - 3 звезды</p><!-- скрытый элемент -->
+              <img
+              src="https://via.placeholder.com/112x17"
+              width="112"
+              height="17"
+              alt="уровень - 3 звезды"
+            />
             </div>
-            <span>Рейтинг: 8,9</span>
+            <p>Рейтинг: 8,5</span>
           </div>
         </article>
         <article>
@@ -160,13 +167,15 @@
           </div>
           <div>
             <div>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
-              <span>з</span>
+              <p>Уровень отеля - 2 звезды</p><!-- скрытый элемент -->
+              <img
+              src="https://via.placeholder.com/112x17"
+              width="112"
+              height="17"
+              alt="уровень - 2 звезды"
+            />
             </div>
-            <span>Рейтинг: 9,2</span>
+            <p>Рейтинг: 8,5</span>
           </div>
         </article>
       </section>
