@@ -1,0 +1,29 @@
+.stars {
+  position: relative;
+  width: 110px;
+  height: 17px;
+}
+
+.stars:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/icn_blue-star.svg");
+  background-size: 22px 17px;
+}
+
+.stars--1:before {
+  width: 20%;
+}
+.stars--2:before {
+  width: 40%;
+}
+.stars--3:before {
+  width: 60%;
+}
+.stars--4:before {
+  width: 80%;
+}

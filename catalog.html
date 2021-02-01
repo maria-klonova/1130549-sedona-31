@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона - Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html">
           <img
-            src="https://via.placeholder.com/138x70"
+            src="img/logo.svg"
             width="138"
             height="70"
             alt="Логотип Седона"
@@ -29,8 +30,8 @@
       <section>
         <h2>Фильтр</h2>
         <form action="#">
-          <div>
-            <span>Инфраструктура:</span>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
             <ul>
               <li>
                 <input type="checkbox" name="pool" id="filter-pool" />
@@ -45,10 +46,10 @@
                 <label for="filter-wifi">Wi-Fi</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
 
-          <div>
-            <span>Тип жилья:</span>
+          <fieldset>
+            <legend>Тип жилья:</legend>
             <ul>
               <li>
                 <input type="checkbox" name="hotel" id="filter-hotel" />
@@ -67,7 +68,7 @@
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
 
           <div>
             <span>Стоимость в сутки (Р):</span>
@@ -75,7 +76,7 @@
             <input type="number" id="price_top" name="price_top" />
             <div>
               <button type="button">start dot</button>
-              <div>line</div>
+              <div></div>
               <button type="button">end dot</button>
             </div>
             <button type="submit">Показать</button>
@@ -99,10 +100,10 @@
         <h2>Выбор гостиниц</h2>
         <article>
           <img
-            src="https://via.placeholder.com/135x90"
+            src="img/Layer 21.jpg"
             width="135"
             height="90"
-            alt="Amara Resort & Spa"
+            alt="Изображение отеля Amara Resort & Spa"
           />
           <div>
             <h3>Amara Resort & Spa</h3>
@@ -114,22 +115,17 @@
           <div>
             <div>
               <p>Уровень отеля - 5 звезд</p><!-- скрытый элемент -->
-              <img
-              src="https://via.placeholder.com/112x17"
-              width="112"
-              height="17"
-              alt="уровень - 5 звезд"
-            />
+              <div class="stars stars--4"></div>
             </div>
-            <p>Рейтинг: 8,5</span>
+            <p>Рейтинг: 8,5</p>
           </div>
         </article>
         <article>
           <img
-            src="https://via.placeholder.com/135x90"
+            src="img/Layer 89 copy.jpg"
             width="135"
             height="90"
-            alt="Amara Resort & Spa"
+            alt="Изображение отеля Desert Quail Inn "
           />
           <div>
             <h3>Desert Quail Inn</h3>
@@ -141,22 +137,17 @@
           <div>
             <div>
               <p>Уровень отеля - 3 звезды</p><!-- скрытый элемент -->
-              <img
-              src="https://via.placeholder.com/112x17"
-              width="112"
-              height="17"
-              alt="уровень - 3 звезды"
-            />
+              <div class="stars stars--3"></div>
             </div>
-            <p>Рейтинг: 8,5</span>
+            <p>Рейтинг: 8,5</p>
           </div>
         </article>
         <article>
           <img
-            src="https://via.placeholder.com/135x90"
+            src="img/Rectangle.jpg"
             width="135"
             height="90"
-            alt="Amara Resort & Spa"
+            alt="Изображение отеля Villas at Poco Diablo"
           />
           <div>
             <h3>Villas at Poco Diablo</h3>
@@ -168,14 +159,9 @@
           <div>
             <div>
               <p>Уровень отеля - 2 звезды</p><!-- скрытый элемент -->
-              <img
-              src="https://via.placeholder.com/112x17"
-              width="112"
-              height="17"
-              alt="уровень - 2 звезды"
-            />
+              <div class="stars stars--2"></div>
             </div>
-            <p>Рейтинг: 8,5</span>
+            <p>Рейтинг: 8,5</p>
           </div>
         </article>
       </section>
