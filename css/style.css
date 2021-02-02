@@ -1,44 +1,43 @@
 /* Variables */
 
 :root {
-
   /*general*/
 
   --basic-black: #000000;
   --basic-light-black: #333333;
-  --basic-light: #A9A9A9;
+  --basic-light: #a9a9a9;
   --basic-light-grey: #666666;
-  --basic-white: #FFFFFF;
-  --basic-academy: #231F20;
-  --basic-academy-light: #BDBBBC;
+  --basic-white: #ffffff;
+  --basic-academy: #231f20;
+  --basic-academy-light: #bdbbbc;
 
   /*button*social*/
 
-  --basic-blue-light: #81B3D2;
-  --basic-blue: #669EC0;
-  --basic-blue-dark: #5496BD;
+  --basic-blue-light: #81b3d2;
+  --basic-blue: #669ec0;
+  --basic-blue-dark: #5496bd;
   --basic-brown-light: #766357;
-  --basic-brown: #604E43;
-  --basic-brown-dark: #503E33;
+  --basic-brown: #604e43;
+  --basic-brown-dark: #503e33;
 }
 
 /* Global */
 
 body {
-  min-width: 1280px;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-
-  color: var(--basic-white);
   text-transform: uppercase;
-  background-color: var(--basic-white);
-  background-image: url("../img/bg_mountains.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -48,6 +47,24 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+.main-header {
+  background-color: var(--basic-white);
 }
 
 /* Main navigation */
@@ -81,9 +98,27 @@ img {
   color: var(--basic-blue-light);
 }
 
-.site-navigation__link:active{
+.site-navigation__link:active {
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+/* city description */
+.city-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 509px;
+  background-color: var(--basic-blue);
+  background-image: url("../img/Shape.svg"), url("../img/bg_mountains.jpg");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+.city-description__title {
+}
+.city-description__img {
 }
 
 /* City description - ниняю*/
@@ -96,15 +131,75 @@ img {
 
 .features-list {
   list-style: none;
+  padding: 0;
 }
 
-.feature-item {
+.features-list__item {
   text-align: center;
 }
 
-.feature-item h3, .feature-item h4 {
+.features-list__header {
   font-size: 21px;
   line-height: 21px;
+}
+
+.features-list__text {
+}
+.features-list__number {
+}
+
+.features-list__image {
+}
+.features-list__image-text {
+}
+.features-list__image-wrapper {
+  display: flex;
+}
+.features-list__image-wrapper--reverse {
+  flex-direction: row-reverse;
+}
+
+.subfeatures {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 55px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 82px;
+
+  list-style: none;
+}
+.subfeatures__item {
+}
+
+.subfeatures__icon {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.subfeatures__icon--home {
+  background-image: url("../img/icon-home.svg");
+}
+.subfeatures__icon--burger {
+  background-image: url("../img/icon-burger.svg");
+}
+.subfeatures__icon--gift {
+  background-image: url("../img/icon-gift.svg");
+}
+
+.subfeatures__title {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.subfeatures__text {
 }
 
 /*  здесь должен быть еще один див , оборачивающий список*/
@@ -116,15 +211,7 @@ img {
   line-height: 21px;
   color: var(--basic-black);
   background-position: center, 0 0;
-  }
-
-
-
-
-
-
-
-
+}
 
 /* stars */
 .stars {
