@@ -1,3 +1,132 @@
+/* Variables */
+
+:root {
+
+  /*general*/
+
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-light: #A9A9A9;
+  --basic-light-grey: #666666;
+  --basic-white: #FFFFFF;
+  --basic-academy: #231F20;
+  --basic-academy-light: #BDBBBC;
+
+  /*button*social*/
+
+  --basic-blue-light: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-blue-dark: #5496BD;
+  --basic-brown-light: #766357;
+  --basic-brown: #604E43;
+  --basic-brown-dark: #503E33;
+}
+
+/* Global */
+
+body {
+  min-width: 1280px;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("../img/bg_mountains.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation__item span {
+  color: var(--basic-white);
+}
+
+/* User navigation */
+
+.site-navigation__link {
+  color: var(--basic-black);
+}
+
+/* .site-navigation__link:visited {
+  color: red;
+} */
+
+.site-navigation__link:hover {
+  color: var(--basic-blue-light);
+}
+
+.site-navigation__link:active{
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* City description - ниняю*/
+.text {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* Features */ /*а как назначить цвет текста? он черный и в 2х заголовках белый*/
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3, .feature-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/*  здесь должен быть еще один див , оборачивающий список*/
+
+/* Index columns */
+
+.index-columns {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-position: center, 0 0;
+  }
+
+
+
+
+
+
+
+
+
+/* stars */
 .stars {
   position: relative;
   width: 110px;
