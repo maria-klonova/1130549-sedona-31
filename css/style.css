@@ -38,15 +38,6 @@ body {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -59,11 +50,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.button {}
-.input-button {}
-.input-button--less {}
-
 
 /* header */
 .main-header {
@@ -145,14 +131,6 @@ img {
   line-height: 21px;
 }
 
-.features-list__text {
-}
-.features-list__number {
-}
-
-.features-list__image {
-}
-.features-list__image-text {
 }
 .features-list__image-wrapper {
   display: flex;
@@ -171,8 +149,6 @@ img {
   padding-bottom: 82px;
 
   list-style: none;
-}
-.subfeatures__item {
 }
 
 .subfeatures__icon {
