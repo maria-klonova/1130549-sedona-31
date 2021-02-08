@@ -62,9 +62,13 @@
           />
         </section>
         <section class="features">
-          <h2>Причины</h2>
-          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h2 class="visually-hidden">Причины</h2>
+          <p class="features__title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="features__subtitle">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
 
           <ul class="features-list">
             <li class="features-list__item">
@@ -156,75 +160,102 @@
         </section>
 
         <section class="hotel-search">
-          <h2>Поиск гостиницы</h2>
-          <p class="hotel-search-info">Заинтересовались?</p>
-          <p class="hotel-search-info">
+          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <p class="hotel-search__title">Заинтересовались?</p>
+          <p class="hotel-search__subtitle">
             Укажите предполагаемые даты поездки, <br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <div>
-            <button class="button" type="button">
+          <div class="search-form__wrapper">
+            <button class="button search-form__button" type="button">
               Поиск гостиницы в Седоне
             </button>
-            <form class="hotel-search-form" action="#" method="post">
-              <div class="hotel-search-item">
-                <label for="hotel-search-arrival-date">Дата заезда:</label>
+            <form class="search-form" action="#" method="post">
+              <div class="search-form__item">
+                <label
+                  class="search-form__label"
+                  for="hotel-search-arrival-date"
+                  >Дата заезда:</label
+                >
                 <input
+                  class="search-form__input-date"
                   type="date"
                   id="hotel-search-arrival-date"
                   name="arrival-date"
                 />
               </div>
-              <div class="hotel-search-item">
-                <label for="hotel-search-departure-date">Дата выезда:</label>
+              <div class="search-form__item">
+                <label
+                  class="search-form__label"
+                  for="hotel-search-departure-date"
+                  >Дата выезда:</label
+                >
                 <input
+                  class="search-form__input-date"
                   type="date"
                   id="hotel-search-departure-date"
                   name="departure-date"
                 />
               </div>
-              <div class="hotel-search-item">
-                <label for="hotel-search-adults">Взрослые:</label>
-                <div>
+              <div class="search-form__item">
+                <label class="search-form__label" for="hotel-search-adults"
+                  >Взрослые:</label
+                >
+                <div class="search-form__additional-wrapper">
                   <button
-                    class="button input-button input-button-less"
+                    class="button input-button input-button--less"
                     type="button"
                   >
+                    <span class="visually-hidden">уменьшить количество</span>
                     -
                   </button>
-                  <input type="number" id="hotel-search-adults" name="adults" />
+                  <input
+                    class="search-form__input-quantity"
+                    type="number"
+                    id="hotel-search-adults"
+                    name="adults"
+                  />
                   <button
-                    class="button input-button input-button-more"
+                    class="button input-button input-button--more"
                     type="button"
                   >
+                    <span class="visually-hidden">увеличить количество</span>
                     +
                   </button>
                 </div>
               </div>
-              <div class="hotel-search-item">
-                <label for="hotel-search-children">Дети:</label>
-                <div>
+              <div class="hotel-search__item">
+                <label class="search-form__label" for="hotel-search__children"
+                  >Дети:</label
+                >
+                <div class="search-form__additional-wrapper">
                   <button
-                    class="button input-button input-button-less"
+                    class="button input-button input-button--less"
                     type="button"
                   >
+                    <span class="visually-hidden">уменьшить количество</span>
                     -
                   </button>
                   <input
+                    class="search-form__input-quantity"
                     type="number"
                     id="hotel-search-children"
                     name="children"
                   />
                   <button
-                    class="button input-button input-button-more"
+                    class="button input-button input-button--more"
                     type="button"
                   >
+                    <span class="visually-hidden">увеличить количество</span>
                     +
                   </button>
                 </div>
               </div>
-              <button class="button" type="submit">Найти</button>
+              <button class="button search-form__submit" type="submit">
+                Найти
+              </button>
             </form>
+            <!-- здесь должна быть карта -->
             <img
               src="https://via.placeholder.com/1200x594"
               width="1200"
@@ -237,32 +268,46 @@
       <footer class="main-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p>
-            <a class="#" href="#">#visitSEDONA</a>
+          <p class="footer-contacts__text">
+            <a class="footer-contacts__hashtag" href="#">#visitSEDONA</a>
             <br />
             Тел:
-            <a class="footer-phone" href="tel:+74956660166"
+            <a class="footer-contacts__phone" href="tel:+74956660166"
               >+7 (495) 666-01-66</a
             >
           </p>
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul>
-            <li>
-              <a class="social-button" href="#">Твиттер</a>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link footer-social__link--twitter"
+                href="#"
+                >Твиттер</a
+              >
             </li>
-            <li>
-              <a class="social-button" href="#">Фейсбук</a>
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link footer-social__link--facebook"
+                href="#"
+                >Фейсбук</a
+              >
             </li>
-            <li>
-              <a class="social-button" href="#">Ютуб</a>
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link footer-social__link--youtube"
+                href="#"
+                >Ютуб</a
+              >
             </li>
           </ul>
         </section>
         <p class="footer-copyright">
           Website by
-          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="footer-copyright__link" href="https://htmlacademy.ru"
+            >HTML Academy</a
+          >
         </p>
       </footer>
     </div>

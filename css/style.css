@@ -34,10 +34,8 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 a {
@@ -61,6 +59,11 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {}
+.input-button {}
+.input-button--less {}
+
 
 /* header */
 .main-header {
@@ -108,26 +111,25 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 509px;
   background-color: var(--basic-blue);
   background-image: url("../img/Shape.svg"), url("../img/bg_mountains.jpg");
-  background-position-x: center;
-  background-position-y: bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 .city-description__title {
 }
 .city-description__img {
+  padding-top:77px;
+  padding-bottom: 81px;
 }
 
-/* City description - ниняю*/
+/* City description*/
 .text {
   font-size: 21px;
   line-height: 26px;
 }
 
-/* Features */ /*а как назначить цвет текста? он черный и в 2х заголовках белый*/
+/* Features */
 
 .features-list {
   list-style: none;
@@ -200,17 +202,6 @@ img {
 }
 
 .subfeatures__text {
-}
-
-/*  здесь должен быть еще один див , оборачивающий список*/
-
-/* Index columns */
-
-.index-columns {
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-black);
-  background-position: center, 0 0;
 }
 
 /* stars */
