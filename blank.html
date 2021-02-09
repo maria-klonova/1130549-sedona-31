@@ -13,52 +13,84 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img
-            src="https://via.placeholder.com/138x70"
+            src="img/logo.svg"
             width="138"
             height="70"
             alt="Логотип Седона"
           />
         </a>
-        <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и Видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="blank.html">Информация</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="img.html">Фото и Видео</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="map.html">Карта штата</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="catalog.html">Гостиницы</a>
+          </li>
+          <li class="site-navigation__item">
+            <span>Гостиницы</span>
+          </li>
         </ul>
       </nav>
     </header>
     <main><h1>Это не те дройды которых вы ищете</h1></main>
-    <footer>
-      <section>
-        <h2>Контакты</h2>
-        <p>
-          <a href="#">#visitSEDONA</a>
+    <footer class="main-footer">
+      <section class="footer_contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="footer-contacts__text">
+          <a class="footer-contacts__hashtag" href="#">#visitSEDONA</a>
           <br />
-          Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+          Тел:
+          <a class="footer-contacts__phone" href="tel:+74956660166"
+            >+7 (495) 666-01-66</a
+          >
         </p>
       </section>
-      <section>
-        <h2>Наши соцсети</h2>
-        <ul>
-          <li>
-            <a href="#">Твиттер</a>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a
+              class="footer-social__link footer-social__link--twitter"
+              href="#"
+              >
+              Twitter
+              </a>
           </li>
-          <li>
-            <a href="#">Фейсбук</a>
+          <li class="footer-social__item">
+            <a
+              class="footer-social__link footer-social__link--facebook"
+              href="#"
+              >Facebook</a>
           </li>
-          <li>
-            <a href="#">Ютуб</a>
+          <li class="footer-social__item">
+            <a
+              class="footer-social__link footer-social__link--youtube"
+              href="#"
+              >Youtube</a>
           </li>
         </ul>
       </section>
-      <p>
+      <p class="footer-copyright">
         Website by
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="footer-copyright__link" href="https://htmlacademy.ru"
+          ><img
+            src="img/logo-htmlacademy.svg"
+            width="115"
+            height="41"
+            alt="Логотип HTMLacademy"
+        /></a>
       </p>
     </footer>
-  </body>
+  </div>
+</body>
 </html>
