@@ -8,25 +8,24 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="favicon/180.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link href="favicon.ico" rel="icon" />
+    <link href="favicon/icon.svg" rel="icon" type="image/svg+xml" />
+    <link href="favicon/180.png" rel="apple-touch-icon" />
+    <link href="manifest.webmanifest" rel="manifest" />
   </head>
-
   <body class="page-body">
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img
+              alt="Логотип Седона"
+              height="70"
               src="img/logo.svg"
               width="138"
-              height="70"
-              alt="Логотип Седона"
             />
           </a>
           <ul class="site-navigation">
@@ -40,10 +39,11 @@
               <a class="site-navigation__link" href="map.html">Карта штата</a>
             </li>
             <li class="site-navigation__item">
-              <a class="site-navigation__link" href="catalog.html">Гостиницы</a>
-            </li>
-            <li class="site-navigation__item">
-              <span>Гостиницы</span>
+              <a
+                class="site-navigation__link site-navigation__link--current"
+                href="catalog.html"
+                >Гостиницы</a
+              >
             </li>
           </ul>
         </nav>
@@ -54,19 +54,19 @@
             Седона - город в Аризоне
           </h1>
           <img
+            alt="Добро пожаловать в Седону"
             class="city-description__img"
+            height="351"
             src="img/welcome.png"
             width="457"
-            height="351"
-            alt="Добро пожаловать в Седону"
           />
         </section>
         <section class="features">
           <h2 class="visually-hidden">Причины</h2>
-          <p class="features__title">
+          <p class="features__text">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </p>
-          <p class="features__subtitle">
+          <p class="features__subtext">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
 
@@ -81,31 +81,28 @@
                   </p>
                 </div>
                 <img
+                  alt="Настоящий городок Седона - там течет своя жизнь."
                   class="features-list__image"
+                  height="256"
                   src="img/image-sedona.jpg"
                   width="800"
-                  height="256"
-                  alt="Настоящий городок Седона - там течет своя жизнь."
                 />
               </div>
               <ul class="subfeatures">
-                <li class="subfeatures__item">
-                  <i class="subfeatures__icon subfeatures__icon--home"></i>
+                <li class="subfeatures__item subfeatures__icon--home">
                   <h4 class="subfeatures__title">Жильё</h4>
                   <p class="subfeatures__text">
                     Рекомендуем пожить в настоящем<br />мотеле, всё как в кино!
                   </p>
                 </li>
-                <li class="subfeatures__item">
-                  <i class="subfeatures__icon subfeatures__icon--burger"></i>
+                <li class="subfeatures__item subfeatures__icon--burger">
                   <h4 class="subfeatures__title">Еда</h4>
                   <p class="subfeatures__text">
                     Всегда заказывайте фирменный бургер,<br />вы не
                     разочаруетесь!
                   </p>
                 </li>
-                <li class="subfeatures__item">
-                  <i class="subfeatures__icon subfeatures__icon--gift"></i>
+                <li class="subfeatures__item subfeatures__icon--gift">
                   <h4 class="subfeatures__title">Сувениры</h4>
                   <p class="subfeatures__text">
                     Не только китайского, но и местного<br />производства!
@@ -127,11 +124,11 @@
                   </p>
                 </div>
                 <img
+                  alt="Мост дьявола в городе Седона"
                   class="features-list__image"
+                  height="256"
                   src="img/image-bridge.jpg"
                   width="800"
-                  height="256"
-                  alt="Мост дьявола в городе Седона"
                 />
               </div>
             </li>
@@ -158,11 +155,10 @@
             </li>
           </ul>
         </section>
-
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <p class="hotel-search__title">Заинтересовались?</p>
-          <p class="hotel-search__subtitle">
+          <p class="hotel-search__text">Заинтересовались?</p>
+          <p class="hotel-search__subtext">
             Укажите предполагаемые даты поездки, <br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
@@ -173,7 +169,7 @@
             >
               Поиск гостиницы в Седоне
             </button>
-            <form class="search-form" action="#" method="post">
+            <form action="#" class="search-form" method="post">
               <div class="search-form__item">
                 <label
                   class="search-form__label"
@@ -182,9 +178,9 @@
                 >
                 <input
                   class="search-form__input-date"
-                  type="date"
                   id="hotel-search-arrival-date"
                   name="arrival-date"
+                  type="date"
                 />
               </div>
               <div class="search-form__item">
@@ -195,9 +191,9 @@
                 >
                 <input
                   class="search-form__input-date"
-                  type="date"
                   id="hotel-search-departure-date"
                   name="departure-date"
+                  type="date"
                 />
               </div>
               <div class="search-form__item">
@@ -206,51 +202,55 @@
                 >
                 <div class="search-form__additional-wrapper">
                   <button
-                    class="button input-button input-button--less"
+                    class="search-form__button-quantity search-form__button-quantity--less"
                     type="button"
                   >
-                    <span class="visually-hidden">уменьшить количество</span>
-                    -
+                    <span class="visually-hidden"
+                      >Уменьшить количество взрослых</span
+                    >
                   </button>
                   <input
                     class="search-form__input-quantity"
-                    type="number"
                     id="hotel-search-adults"
                     name="adults"
+                    type="number"
                   />
                   <button
-                    class="button input-button input-button--more"
+                    class="search-form__button-quantity search-form__button-quantity--more"
                     type="button"
                   >
-                    <span class="visually-hidden">увеличить количество</span>
-                    +
+                    <span class="visually-hidden"
+                      >Увеличить количество взрослых</span
+                    >
                   </button>
                 </div>
               </div>
               <div class="hotel-search__item">
-                <label class="search-form__label" for="hotel-search__children"
+                <label class="search-form__label" for="hotel-search-children"
                   >Дети:</label
                 >
                 <div class="search-form__additional-wrapper">
                   <button
-                    class="button input-button input-button--less"
+                    class="search-form__button-quantity search-form__button-quantity--less"
                     type="button"
                   >
-                    <span class="visually-hidden">уменьшить количество</span>
-                    -
+                    <span class="visually-hidden"
+                      >Уменьшить количество детей</span
+                    >
                   </button>
                   <input
                     class="search-form__input-quantity"
-                    type="number"
                     id="hotel-search-children"
                     name="children"
+                    type="number"
                   />
                   <button
-                    class="button input-button input-button--more"
+                    class="search-form__button-quantity search-form__button-quantity--more"
                     type="button"
                   >
-                    <span class="visually-hidden">увеличить количество</span>
-                    +
+                    <span class="visually-hidden"
+                      >Увеличить количество детей</span
+                    >
                   </button>
                 </div>
               </div>
@@ -262,12 +262,6 @@
               </button>
             </form>
             <!-- здесь должна быть карта -->
-            <img
-              src="https://via.placeholder.com/1200x594"
-              width="1200"
-              height="594"
-              alt="Карта гостиниц"
-            />
           </div>
         </section>
       </main>
@@ -290,21 +284,23 @@
               <a
                 class="footer-social__link footer-social__link--twitter"
                 href="#"
-                >
+              >
                 Twitter
-                </a>
+              </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link--facebook"
                 href="#"
-                >Facebook</a>
+                >Facebook</a
+              >
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link--youtube"
                 href="#"
-                >Youtube</a>
+                >Youtube</a
+              >
             </li>
           </ul>
         </section>
@@ -312,10 +308,10 @@
           Website by
           <a class="footer-copyright__link" href="https://htmlacademy.ru"
             ><img
+              alt="Логотип HTMLacademy"
+              height="41"
               src="img/logo-htmlacademy.svg"
               width="115"
-              height="41"
-              alt="Логотип HTMLacademy"
           /></a>
         </p>
       </footer>

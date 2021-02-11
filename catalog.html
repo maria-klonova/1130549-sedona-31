@@ -8,8 +8,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <div class="container">
@@ -17,10 +17,10 @@
         <nav>
           <a href="index.html">
             <img
+              alt="Логотип Седона"
+              height="70"
               src="img/logo.svg"
               width="138"
-              height="70"
-              alt="Логотип Седона"
             />
           </a>
           <ul class="site-navigation">
@@ -33,7 +33,9 @@
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="map.html">Карта штата</a>
             </li>
-            <li class="site-navigation__item"><span>Гостиницы</span></li>
+            <li class="site-navigation__item">
+              <span class="site-navigation__link-current">Гостиницы</span>
+            </li>
           </ul>
         </nav>
       </header>
@@ -41,43 +43,40 @@
         <h1 class="visually-hidden">Каталог</h1>
         <section>
           <h2 class="visually-hidden">Фильтр</h2>
-          <form class="catalog-form" action="#">
+          <form action="#" class="catalog-form">
             <fieldset class="catalog-form__fieldset">
               <legend class="catalog-form__fieldset-name">
                 Инфраструктура:
               </legend>
               <ul class="catalog-form__list">
                 <li class="catalog-form__item">
-                  <label class="catalog-form__label" for="filter-pool">
+                  <label class="catalog-form__label">
                     <input
                       class="catalog-form__checkbox"
-                      type="checkbox"
                       name="pool"
-                      id="filter-pool"
+                      type="checkbox"
                     />
                     <span class="catalog-form__checkbox-icon"></span>
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-form__item">
-                  <label class="catalog-form__label" for="filter-parking">
+                  <label class="catalog-form__label">
                     <input
                       class="catalog-form__checkbox"
-                      type="checkbox"
                       name="parking"
-                      id="filter-parking"
+                      type="checkbox"
                     />
                     <span class="catalog-form__checkbox-icon"></span>
                     Парковка
                   </label>
                 </li>
                 <li class="catalog-form__item">
-                  <label class="catalog-form__label" for="filter-wifi">
+                  <label class="catalog-form__label">
                     <input
                       class="catalog-form__checkbox"
-                      type="checkbox"
                       name="wifi"
-                      id="filter-wifi"
+                      type="checkbox"
                     />
                     <span class="catalog-form__checkbox-icon"></span>
                     Wi-Fi</label
@@ -90,36 +89,33 @@
               <legend class="catalog-form__fieldset-name">Тип жилья:</legend>
               <ul class="catalog-form__list">
                 <li class="catalog-form__item">
-                  <label class="catalog-form__label" for="filter-hotel">
+                  <label class="catalog-form__label">
                     <input
                       class="catalog-form__checkbox"
-                      type="checkbox"
                       name="hotel"
-                      id="filter-hotel"
+                      type="checkbox"
                     />
                     <span class="catalog-form__checkbox-icon"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-form__item">
-                  <label class="catalog-form__label" for="filter-motel">
+                  <label class="catalog-form__label">
                     <input
                       class="catalog-form__checkbox"
-                      type="checkbox"
                       name="motel"
-                      id="filter-motel"
+                      type="checkbox"
                     />
                     <span class="catalog-form__checkbox-icon"></span>
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-form__item">
-                  <label class="catalog-form__label" for="filter-apartments">
+                  <label class="catalog-form__label">
                     <input
                       class="catalog-form__checkbox"
-                      type="checkbox"
                       name="apartments"
-                      id="filter-apartments"
+                      type="checkbox"
                     />
                     <span class="catalog-form__checkbox-icon"></span>
                     Апартаменты
@@ -135,15 +131,15 @@
               <div class="catalog-form__input-range-wrapper">
                 <input
                   class="catalog-form__input-range"
-                  type="number"
                   id="price_low"
                   name="price_low"
+                  type="number"
                 />
                 <input
                   class="catalog-form__input-range"
-                  type="number"
                   id="price_top"
                   name="price_top"
+                  type="number"
                 />
               </div>
               <div class="range-picker">
@@ -161,11 +157,11 @@
           </form>
         </section>
         <div class="ordering__wrapper">
-          <span class="ordering__results-count">Найдено: 3</span>
+          <p class="ordering__results-count">Найдено: 3</p>
           <span class="ordering__title">Сортировка:</span>
           <ul class="ordering">
             <li class="ordering__item">
-              <a class="ordering__link"><span>По цене</span></a>
+              <a class="ordering__link ordering__link--active">По цене</a>
             </li>
             <li class="ordering__item">
               <a class="ordering__link">По типу</a>
@@ -187,11 +183,11 @@
           <h2 class="visually-hidden">Выбор гостиниц</h2>
           <article class="selection-list__item">
             <img
+              alt="Изображение отеля Amara Resort & Spa"
               class="selection_list__image"
+              height="90"
               src="img/amara.jpg"
               width="135"
-              height="90"
-              alt="Изображение отеля Amara Resort & Spa"
             />
             <div>
               <h3 class="selection-list__name">Amara Resort & Spa</h3>
@@ -214,11 +210,11 @@
           </article>
           <article class="selection-list__item">
             <img
+              alt="Изображение отеля Desert Quail Inn "
               class="selection-list__image"
+              height="90"
               src="img/desert.jpg"
               width="135"
-              height="90"
-              alt="Изображение отеля Desert Quail Inn "
             />
             <div>
               <h3 class="selection-list__name">Desert Quail Inn</h3>
@@ -241,11 +237,11 @@
           </article>
           <article class="selection-list__item">
             <img
+              alt="Изображение отеля Villas at Poco Diablo"
               class="selection_list__image"
+              height="90"
               src="img/villas.jpg"
               width="135"
-              height="90"
-              alt="Изображение отеля Villas at Poco Diablo"
             />
             <div>
               <h3 class="selection-list__name">Villas at Poco Diablo</h3>
@@ -287,21 +283,23 @@
               <a
                 class="footer-social__link footer-social__link--twitter"
                 href="#"
-                >
+              >
                 Twitter
-                </a>
+              </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link--facebook"
                 href="#"
-                >Facebook</a>
+                >Facebook</a
+              >
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link--youtube"
                 href="#"
-                >Youtube</a>
+                >Youtube</a
+              >
             </li>
           </ul>
         </section>
@@ -309,10 +307,10 @@
           Website by
           <a class="footer-copyright__link" href="https://htmlacademy.ru"
             ><img
+              alt="Логотип htmlacademy"
+              height="41"
               src="img/logo-htmlacademy.svg"
               width="115"
-              height="41"
-              alt="Логотип HTMLacademy"
           /></a>
         </p>
       </footer>
