@@ -14,7 +14,7 @@
     <link href="favicon.ico" rel="icon" />
     <link href="favicon/icon.svg" rel="icon" type="image/svg+xml" />
     <link href="favicon/180.png" rel="apple-touch-icon" />
-    <link href="manifest.webmanifest" rel="manifest" />
+<!-<link href="manifest.webmanifest" rel="manifest" />
   </head>
   <body class="page-body">
     <div class="container">
@@ -28,27 +28,37 @@
               width="138"
             />
           </a>
-          <ul class="site-navigation">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="blank.html">Информация</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="img.html">Фото и Видео</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="map.html">Карта штата</a>
-            </li>
-            <li class="site-navigation__item">
-              <a
-                class="site-navigation__link site-navigation__link--current"
-                href="catalog.html"
-                >Гостиницы</a
-              >
-            </li>
-          </ul>
+          <div class="main-header-bar">
+            <div class="main-navigation-wrapper">
+              <ul class="site-navigation">
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="blank.html"
+                    >Информация 1</a
+                  >
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="img.html"
+                    >Фото и Видео</a
+                  >
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="map.html"
+                    >Карта штата</a
+                  >
+                </li>
+                <li class="site-navigation__item">
+                  <a
+                    class="site-navigation__link site-navigation__link--current"
+                    href="catalog.html"
+                    >Гостиницы</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
-      <main>
+      <main class="container">
         <section class="city-description">
           <h1 class="city-description__title visually-hidden">
             Седона - город в Аризоне
@@ -71,7 +81,7 @@
           </p>
 
           <ul class="features-list">
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--wide">
               <div class="features-list__image-wrapper">
                 <div class="features-list__image-text">
                   <h3 class="features-list__header">Настоящий городок</h3>
@@ -110,7 +120,7 @@
                 </li>
               </ul>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--wide">
               <div
                 class="features-list__image-wrapper features-list__image-wrapper--reverse"
               >
@@ -132,21 +142,21 @@
                 />
               </div>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--gray">
               <h3 class="features-list__header">Небольшая<br />Площадь</h3>
               <span class="features-list__number">— №3 —</span>
               <p class="features-list__text">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--gray">
               <h3 class="features-list__header">Красивая<br />Дорога</h3>
               <span class="features-list__number">— №4 —</span>
               <p class="features-list__text">
                 Ехать в Седону из Лас-вегаса совсем не скучно!
               </p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--gray">
               <h3 class="features-list__header">Мало<br />Туристов</h3>
               <span class="features-list__number">— №5 —</span>
               <p class="features-list__text">
@@ -170,7 +180,7 @@
               Поиск гостиницы в Седоне
             </button>
             <form action="#" class="search-form" method="post">
-              <div class="search-form__item">
+              <div class="search-form__item search-form__item--wide">
                 <label
                   class="search-form__label"
                   for="hotel-search-arrival-date"
@@ -183,7 +193,7 @@
                   type="date"
                 />
               </div>
-              <div class="search-form__item">
+              <div class="search-form__item search-form__item--wide">
                 <label
                   class="search-form__label"
                   for="hotel-search-departure-date"
@@ -225,7 +235,7 @@
                   </button>
                 </div>
               </div>
-              <div class="hotel-search__item">
+              <div class="search-form__item">
                 <label class="search-form__label" for="hotel-search-children"
                   >Дети:</label
                 >
@@ -266,7 +276,7 @@
         </section>
       </main>
       <footer class="main-footer">
-        <section class="footer_contacts">
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="footer-contacts__text">
             <a class="footer-contacts__hashtag" href="#">#visitSEDONA</a>
