@@ -13,11 +13,11 @@
     <link href="favicon.ico" rel="icon" />
     <link href="favicon/icon.svg" rel="icon" type="image/svg+xml" />
     <link href="favicon/180.png" rel="apple-touch-icon" />
-    <link href="manifest.webmanifest" rel="manifest" />
+    <!--    <link href="manifest.webmanifest" rel="manifest" />-->
   </head>
   <body class="page-body">
-    <div class="container">
-      <header class="main-header default-paddings-x">
+    <div class="container index-page-grid">
+      <header class="main-header default-paddings-x index-page-grid--header">
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img
@@ -57,7 +57,7 @@
           </div>
         </nav>
       </header>
-      <main class="container">
+      <main class="index-page-grid--main">
         <section class="city-description">
           <h1 class="city-description__title visually-hidden">
             Седона - город в Аризоне
@@ -73,7 +73,8 @@
         <section class="features">
           <h2 class="visually-hidden">Причины</h2>
           <p class="features__text">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне,<br />
+            заслуживающий большего!
           </p>
           <p class="features__subtext">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -173,108 +174,116 @@
           </p>
           <div class="search-form__wrapper">
             <button
+              id="search-form__button"
               class="button button--brown search-form__button"
               type="button"
             >
               Поиск гостиницы в Седоне
             </button>
-            <form action="#" class="search-form" method="post">
-              <div class="search-form__item search-form__item--wide">
-                <label
-                  class="search-form__label"
-                  for="hotel-search-arrival-date"
-                  >Дата заезда:</label
-                >
-                <input
-                  class="search-form__input-date"
-                  id="hotel-search-arrival-date"
-                  name="arrival-date"
-                  type="date"
-                />
-              </div>
-              <div class="search-form__item search-form__item--wide">
-                <label
-                  class="search-form__label"
-                  for="hotel-search-departure-date"
-                  >Дата выезда:</label
-                >
-                <input
-                  class="search-form__input-date"
-                  id="hotel-search-departure-date"
-                  name="departure-date"
-                  type="date"
-                />
-              </div>
-              <div class="search-form__item">
-                <label class="search-form__label" for="hotel-search-adults"
-                  >Взрослые:</label
-                >
-                <div class="search-form__additional-wrapper">
-                  <button
-                    class="search-form__button-quantity search-form__button-quantity--less"
-                    type="button"
-                  >
-                    <span class="visually-hidden"
-                      >Уменьшить количество взрослых</span
-                    >
-                  </button>
-                  <input
-                    class="search-form__input-quantity"
-                    id="hotel-search-adults"
-                    name="adults"
-                    type="number"
-                  />
-                  <button
-                    class="search-form__button-quantity search-form__button-quantity--more"
-                    type="button"
-                  >
-                    <span class="visually-hidden"
-                      >Увеличить количество взрослых</span
-                    >
-                  </button>
-                </div>
-              </div>
-              <div class="search-form__item">
-                <label class="search-form__label" for="hotel-search-children"
-                  >Дети:</label
-                >
-                <div class="search-form__additional-wrapper">
-                  <button
-                    class="search-form__button-quantity search-form__button-quantity--less"
-                    type="button"
-                  >
-                    <span class="visually-hidden"
-                      >Уменьшить количество детей</span
-                    >
-                  </button>
-                  <input
-                    class="search-form__input-quantity"
-                    id="hotel-search-children"
-                    name="children"
-                    type="number"
-                  />
-                  <button
-                    class="search-form__button-quantity search-form__button-quantity--more"
-                    type="button"
-                  >
-                    <span class="visually-hidden"
-                      >Увеличить количество детей</span
-                    >
-                  </button>
-                </div>
-              </div>
-              <button
-                class="button button--blue search-form__submit"
-                type="submit"
+            <div class="search-form__overflow-wrapper">
+              <form
+                action="#"
+                id="search-form"
+                class="search-form search-form--active"
+                method="post"
               >
-                Найти
-              </button>
-            </form>
-            <!-- здесь должна быть карта -->
+                <div class="search-form__item search-form__item--wide">
+                  <label
+                    class="search-form__label"
+                    for="hotel-search-arrival-date"
+                    >Дата заезда:</label
+                  >
+                  <input
+                    class="search-form__input-date"
+                    id="hotel-search-arrival-date"
+                    name="arrival-date"
+                    type="date"
+                  />
+                </div>
+                <div class="search-form__item search-form__item--wide">
+                  <label
+                    class="search-form__label"
+                    for="hotel-search-departure-date"
+                    >Дата выезда:</label
+                  >
+                  <input
+                    class="search-form__input-date"
+                    id="hotel-search-departure-date"
+                    name="departure-date"
+                    type="date"
+                  />
+                </div>
+                <div class="search-form__item">
+                  <label class="search-form__label" for="hotel-search-adults"
+                    >Взрослые:</label
+                  >
+                  <div class="search-form__additional-wrapper">
+                    <button
+                      class="search-form__button-quantity search-form__button-quantity--less"
+                      type="button"
+                    >
+                      <span class="visually-hidden"
+                        >Уменьшить количество взрослых</span
+                      >
+                    </button>
+                    <input
+                      class="search-form__input-quantity"
+                      id="hotel-search-adults"
+                      name="adults"
+                      type="number"
+                    />
+                    <button
+                      class="search-form__button-quantity search-form__button-quantity--more"
+                      type="button"
+                    >
+                      <span class="visually-hidden"
+                        >Увеличить количество взрослых</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="search-form__item">
+                  <label class="search-form__label" for="hotel-search-children"
+                    >Дети:</label
+                  >
+                  <div class="search-form__additional-wrapper">
+                    <button
+                      class="search-form__button-quantity search-form__button-quantity--less"
+                      type="button"
+                    >
+                      <span class="visually-hidden"
+                        >Уменьшить количество детей</span
+                      >
+                    </button>
+                    <input
+                      class="search-form__input-quantity"
+                      id="hotel-search-children"
+                      name="children"
+                      type="number"
+                    />
+                    <button
+                      class="search-form__button-quantity search-form__button-quantity--more"
+                      type="button"
+                    >
+                      <span class="visually-hidden"
+                        >Увеличить количество детей</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <button
+                  class="button button--blue search-form__submit"
+                  type="submit"
+                >
+                  Найти
+                </button>
+              </form>
+            </div>
+            <div id="map" class="google-map"></div>
           </div>
         </section>
       </main>
-      <footer class="main-footer default-paddings-x">
+      <footer class="main-footer default-paddings-x index-page-grid--footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="footer-contacts__text">
@@ -325,5 +334,6 @@
         </p>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
