@@ -445,7 +445,6 @@ align-items: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  width: 112px;
 }
 
 .search-form__submit {
@@ -551,6 +550,9 @@ align-items: center;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
