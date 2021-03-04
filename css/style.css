@@ -70,7 +70,14 @@
 }
 
 .button--blue {
+  width: 110px;
+  height: 27px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--basic-blue);
+  cursor: pointer;
 }
 
 .button--blue:hover {
@@ -82,6 +89,12 @@
 }
 
 .button--brown {
+  width: 142px;
+  height: 27px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--basic-brown);
 }
 
@@ -375,23 +388,64 @@
   z-index: 0;
 }
 
+.search-form__input-date {
+  width: 346px;
+  height: 38px;
+  border: 0;
+  outline: 0;
+  background-color: #f2f2f2;
+}
+.search-form__button-quantity {
+  width: 38px;
+  height: 38px;
+  background: #f2f2f2;
+}
+
+.search-form__input-quantity {
+  width: 38px;
+  height: auto;
+  border: 0;
+  outline: 0;
+  background: #f2f2f2;
+}
+
 .search-form__button {
   grid-area: 1/2/2/3;
   height: 86px;
+  width: auto;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.search-form__submit {
+  width: auto;
+  height: 58px;
 }
 
 .search-form__item--wide {
   grid-column: 1/ -1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-form__item {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.search-form__additional-wrapper{
+  display: flex;
 }
 
 .search-form__label {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  width: 112px;
 }
 
 .search-form__submit {
@@ -538,6 +592,7 @@ li {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  margin-bottom: 10px;
   color: var(--basic-white);
 }
 
@@ -545,7 +600,14 @@ li {
   padding: 0;
 }
 
+.catalog-form__item {
+  margin-top: 25px;
+}
+
 .catalog-form__label {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   color: var(--basic-white);
 }
 
@@ -557,6 +619,7 @@ li {
   display: inline-block;
   width: 27px;
   height: 23px;
+  margin-right: 13px;
   background-image: url("../img/checkbox-off.svg");
   background-position: left center;
   background-repeat: no-repeat;
@@ -573,6 +636,9 @@ li {
 .catalog-form__input-range-wrapper {
   border: 2px solid var(--basic-white);
   border-radius: 4px;
+  margin-bottom: 20px;
+  height: 36px;
+  width: 317px;
 }
 
 .catalog-form__input-range {
@@ -591,6 +657,7 @@ li {
 
 .range-picker {
   color: var(--basic-white);
+  margin-bottom: 33px;
 }
 
 .catalog-form__submit {
@@ -763,6 +830,9 @@ li {
   align-items: center;
   margin: 0;
   color: #666;
+  background: #f2f2f2;
+  width: 110px;
+  height: 27px;
 }
 
 /* stars */
