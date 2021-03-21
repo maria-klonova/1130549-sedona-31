@@ -144,7 +144,7 @@
                 <button class="range-picker__button" type="button">
                   start dot
                 </button>
-                <button class="range-picker__button" type="button">
+                <button class="range-picker__button range-picker__button--end" type="button">
                   end dot
                 </button>
               </div>
@@ -250,17 +250,18 @@
           </article>
         </section>
       </main>
-      <footer class="main-footer default-paddings-x">
-        <section class="footer_contacts">
+      <footer class="main-footer default-paddings-x index-page-grid--footer">
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="footer-contacts__text">
+          <div class="footer-contacts__text">
             <a class="footer-contacts__hashtag" href="#">#visitSEDONA</a>
-            <br />
-            Тел:
-            <a class="footer-contacts__phone" href="tel:+74956660166"
+            <div class="footer-contacts__phone-wrapper">
+              Тел:
+              <a class="footer-contacts__phone" href="tel:+74956660166"
               >+7 (495) 666-01-66</a
-            >
-          </p>
+              >
+            </div>
+          </div>
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
@@ -277,14 +278,14 @@
               <a
                 class="footer-social__link footer-social__link--facebook"
                 href="#"
-                >Facebook</a
+              >Facebook</a
               >
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link--youtube"
                 href="#"
-                >Youtube</a
+              >Youtube</a
               >
             </li>
           </ul>
@@ -292,11 +293,11 @@
         <p class="footer-copyright">
           Website by
           <a class="footer-copyright__link" href="https://htmlacademy.ru"
-            ><img
-              alt="Логотип htmlacademy"
-              height="41"
-              src="img/logo-htmlacademy.svg"
-              width="115"
+          ><img
+            alt="Логотип HTMLacademy"
+            height="41"
+            src="img/logo-htmlacademy.svg"
+            width="115"
           /></a>
         </p>
       </footer>
